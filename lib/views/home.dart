@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'widgets/home_details/home_details.dart';
 import 'widgets/navbar/navbar.dart';
-import 'widgets/navbar/navbar_tablet.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);

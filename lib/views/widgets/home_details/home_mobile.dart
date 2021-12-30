@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:funto_landing_page/views/widgets/home/image_item.dart';
-import 'package:funto_landing_page/views/widgets/home/next_icon.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/bottom_text.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/call_to_action.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/header.dart';

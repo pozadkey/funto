@@ -10,17 +10,12 @@ class NavBarDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _textfonts = TextStyle(
-        fontStyle: FontStyle.normal, fontSize: 14, fontWeight: FontWeight.w600);
-
-    final _navfonts = TextStyle(
-        fontStyle: FontStyle.normal, fontSize: 12, fontWeight: FontWeight.w500);
-
     final _navbuttonfonts = TextStyle(
         fontStyle: FontStyle.normal,
         fontSize: 12,
         color: Colors.black,
         fontWeight: FontWeight.w700);
+
     return Container(
       padding: EdgeInsets.fromLTRB(50, 0, 50, 0),
       height: 80,

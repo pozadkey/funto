@@ -1,11 +1,18 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:funto_landing_page/views/widgets/navbar/navbar_logo.dart';
+import 'package:funto_landing_page/views/widgets/dialog_box/dialog_box.dart';
 
-class NavBarMobile extends StatelessWidget {
+import 'navbar_logo.dart';
+
+class NavBarMobile extends StatefulWidget {
   const NavBarMobile({Key? key}) : super(key: key);
 
+  @override
+  _NavBarMobileState createState() => _NavBarMobileState();
+}
+
+class _NavBarMobileState extends State<NavBarMobile> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +24,15 @@ class NavBarMobile extends StatelessWidget {
           children: [
             NavBarLogo(),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                showDialog(
+                    barrierDismissible: false,
+                    barrierColor: null,
+                    context: context,
+                    builder: (BuildContext context) {
+                      return DialogBox();
+                    });
+              },
               icon: Icon(Icons.menu_rounded),
               iconSize: 30,
             )

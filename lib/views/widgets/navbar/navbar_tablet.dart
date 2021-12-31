@@ -86,29 +86,27 @@ class _NavBarTabletState extends State<NavBarTablet> {
                               SizedBox(
                                 height: 40,
                               ),
-                              Flexible(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    TextButton(
-                                      child: Padding(
-                                        padding:
-                                            EdgeInsets.fromLTRB(10, 10, 10, 10),
-                                        child: Text(
-                                          'Get early access',
-                                          style: _navbuttonfonts,
-                                        ),
-                                      ),
-                                      onPressed: () {},
-                                      style: TextButton.styleFrom(
-                                        backgroundColor: Colors.white,
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10.0)),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  TextButton(
+                                    child: Padding(
+                                      padding:
+                                          EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                      child: Text(
+                                        'Get early access',
+                                        style: _navbuttonfonts,
                                       ),
                                     ),
-                                  ],
-                                ),
+                                    onPressed: () {},
+                                    style: TextButton.styleFrom(
+                                      backgroundColor: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10.0)),
+                                    ),
+                                  ),
+                                ],
                               )
                             ],
                           ),

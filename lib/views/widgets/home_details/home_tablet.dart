@@ -2,18 +2,37 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:funto_landing_page/views/widgets/home/image_item.dart';
+import 'package:funto_landing_page/views/widgets/image_item.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/bottom_text.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/call_to_action.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/header.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/inputField.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/sub_header.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeTablet extends StatelessWidget {
   const HomeTablet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    _launchTwitter() async {
+      const url = 'https://twitter.com/pozadkey';
+      if (await canLaunch(url)) {
+        await launch(url);
+      } else {
+        throw 'Could not launch $url';
+      }
+    }
+
+    _launchGithub() async {
+      const url = 'https://github.com/pozadkey';
+      if (await canLaunch(url)) {
+        await launch(url);
+      } else {
+        throw 'Could not launch $url';
+      }
+    }
+
     return Container(
       padding: EdgeInsets.fromLTRB(120, 80, 120, 30),
       child: Column(
@@ -55,13 +74,17 @@ class HomeTablet extends StatelessWidget {
               children: [
                 BottomText(),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    _launchTwitter();
+                  },
                   icon: Icon(FontAwesomeIcons.twitter),
                   iconSize: 25,
                   color: Colors.grey[400],
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    _launchGithub();
+                  },
                   icon: Icon(FontAwesomeIcons.github),
                   iconSize: 25,
                   color: Colors.grey[400],

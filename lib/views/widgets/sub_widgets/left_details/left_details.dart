@@ -7,6 +7,7 @@ import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/call_t
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/header.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/inputField.dart';
 import 'package:funto_landing_page/views/widgets/sub_widgets/left_details/sub_header.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LeftDetails extends StatefulWidget {
   const LeftDetails({Key? key}) : super(key: key);
@@ -16,6 +17,24 @@ class LeftDetails extends StatefulWidget {
 }
 
 class _LeftDetailsState extends State<LeftDetails> {
+  _launchTwitter() async {
+    const url = 'https://twitter.com/pozadkey';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchGithub() async {
+    const url = 'https://github.com/pozadkey';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -47,7 +66,9 @@ class _LeftDetailsState extends State<LeftDetails> {
                   width: 20,
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    _launchTwitter();
+                  },
                   icon: Icon(FontAwesomeIcons.twitter),
                   iconSize: 25,
                   color: Colors.grey[400],
@@ -56,7 +77,9 @@ class _LeftDetailsState extends State<LeftDetails> {
                   width: 20,
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    _launchGithub();
+                  },
                   icon: Icon(FontAwesomeIcons.github),
                   iconSize: 25,
                   color: Colors.grey[400],

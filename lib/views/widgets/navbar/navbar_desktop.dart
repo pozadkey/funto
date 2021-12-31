@@ -19,53 +19,47 @@ class NavBarDesktop extends StatelessWidget {
     return Container(
       padding: EdgeInsets.fromLTRB(50, 0, 50, 0),
       height: 80,
-      child: Flexible(
-        flex: 1,
-        fit: FlexFit.loose,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            children: [
+              NavBarLogo(),
+              SizedBox(
+                width: 50,
+              ),
+              NavBarItem(title: 'Documentation'),
+              SizedBox(width: 20),
+              NavBarItem(title: 'Pricing'),
+              SizedBox(width: 20),
+              NavBarItem(title: 'Resources'),
+              SizedBox(width: 20),
+              NavBarItem(title: 'Blog'),
+            ],
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(100, 0, 0, 0),
+            child: Row(
               children: [
-                NavBarLogo(),
-                SizedBox(
-                  width: 50,
+                TextButton(
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    child: Text(
+                      'Get early access',
+                      style: _navbuttonfonts,
+                    ),
+                  ),
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0)),
+                  ),
                 ),
-                NavBarItem(title: 'Documentation'),
-                SizedBox(width: 20),
-                NavBarItem(title: 'Pricing'),
-                SizedBox(width: 20),
-                NavBarItem(title: 'Resources'),
-                SizedBox(width: 20),
-                NavBarItem(title: 'Blog'),
               ],
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(100, 0, 0, 0),
-              child: Flexible(
-                child: Row(
-                  children: [
-                    TextButton(
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                        child: Text(
-                          'Get early access',
-                          style: _navbuttonfonts,
-                        ),
-                      ),
-                      onPressed: () {},
-                      style: TextButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0)),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
+          )
+        ],
       ),
     );
   }

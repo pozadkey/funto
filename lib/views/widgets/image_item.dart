@@ -7,7 +7,7 @@ class ImageItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.asset(
       'assets/images/content.png',
-      height: 300,
+      height: 400,
       width: 400,
       fit: BoxFit.contain,
       colorBlendMode: BlendMode.darken,

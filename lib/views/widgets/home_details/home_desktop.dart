@@ -14,11 +14,9 @@ class HomeDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.fromLTRB(150, 100, 150, 50),
-      child: SingleChildScrollView(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [LeftDetails(), Expanded(child: ImageItem()), NextIcon()],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [LeftDetails(), Expanded(child: ImageItem()), NextIcon()],
       ),
     );
   }

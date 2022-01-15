@@ -28,7 +28,7 @@ class _NavBarItemsState extends State<NavBarItems> {
             height: 60.0,
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 24.0),
-            child: Text(
+            child: SelectableText(
               widget.title,
               style: _navfonts,
             ),

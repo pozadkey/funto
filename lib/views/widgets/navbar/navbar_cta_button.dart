@@ -20,7 +20,7 @@ class _NavBarCTAButtonState extends State<NavBarCTAButton> {
     return TextButton(
       child: Padding(
         padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-        child: Text(
+        child: SelectableText(
           'Get early access',
           style: _navbuttonfonts,
         ),

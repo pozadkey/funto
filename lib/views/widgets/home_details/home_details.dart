@@ -22,10 +22,5 @@ class _HomeDetailsState extends State<HomeDetails> {
         return HomeDesktop();
       }
     });
-    /* return ScreenTypeLayout(
-      desktop: HomeDesktop(),
-      mobile: HomeMobile(),
-      tablet: HomeTablet(),
-    );*/
   }
 }

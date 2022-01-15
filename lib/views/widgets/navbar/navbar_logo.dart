@@ -17,7 +17,7 @@ class NavBarLogo extends StatelessWidget {
       children: [
         Icon(Icons.connect_without_contact_rounded),
         SizedBox(width: 10),
-        Text(
+        SelectableText(
           'Funto',
           style: _headerfonts,
         ),

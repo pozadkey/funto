@@ -32,7 +32,8 @@ class SubHeader extends StatelessWidget {
           style: _content_sub_fonts_Mobile,
         );
       } else {
-        return SelectableText('The platform for local-first software.',
+        return SelectableText(
+            'Don\'t write real-time APIs. Move yout data base to the browser. Funto keeps local data in sync so you can build fast and collaborative apps.',
             style: _content_sub_fonts);
       }
     });

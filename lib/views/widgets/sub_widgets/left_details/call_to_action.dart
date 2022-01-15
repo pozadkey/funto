@@ -16,7 +16,7 @@ class CallToAction extends StatelessWidget {
     return TextButton(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Text(
+        child: SelectableText(
           'Get early access',
           style: _buttonfonts,
         ),

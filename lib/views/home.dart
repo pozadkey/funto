@@ -16,19 +16,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        Expanded(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                NavBar(),
-                HomeDetails(),
-              ],
-            ),
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            NavBar(),
+            HomeDetails(),
+          ],
         ),
-      ],
-    ));
+      ),
+    );
   }
 }

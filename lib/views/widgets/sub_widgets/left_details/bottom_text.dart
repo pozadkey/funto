@@ -10,7 +10,7 @@ class BottomText extends StatelessWidget {
     final _textfonts = TextStyle(
         fontStyle: FontStyle.normal, fontSize: 14, fontWeight: FontWeight.w500);
 
-    return Text(
+    return SelectableText(
       'Integrations',
       style: _textfonts,
     );

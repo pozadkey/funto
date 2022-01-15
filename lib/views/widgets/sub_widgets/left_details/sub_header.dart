@@ -22,17 +22,17 @@ class SubHeader extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return LayoutBuilder(builder: (context, constraints) {
       if (width > 671 && width < 1000) {
-        return Text(
+        return SelectableText(
           'Don\'t write real-time APIs. Move yout data base to the browser. Funto keeps local data in sync so you can build fast and collaborative apps.',
           style: _content_sub_fonts,
         );
       } else if (width < 671) {
-        return Text(
+        return SelectableText(
           'Don\'t write real-time APIs. Move yout data base to the browser. Funto keeps local data in sync so you can build fast and collaborative apps.',
           style: _content_sub_fonts_Mobile,
         );
       } else {
-        return Text('The platform for local-first software.',
+        return SelectableText('The platform for local-first software.',
             style: _content_sub_fonts);
       }
     });

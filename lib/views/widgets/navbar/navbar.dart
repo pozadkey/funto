@@ -31,17 +31,13 @@ class _NavBarState extends State<NavBar> {
           height: (width < 1000.0) ? collapsableHeight : 0.0,
           width: double.infinity,
           color: Colors.black,
-          child: Expanded(
-            child: SingleChildScrollView(
-              child: Column(children: [
-                NavBarItems(title: 'Documentation'),
-                NavBarItems(title: 'Pricing'),
-                NavBarItems(title: 'Resources'),
-                NavBarItems(title: 'Blog'),
-                NavBarCTAButton()
-              ]),
-            ),
-          ),
+          child: Column(children: [
+            Expanded(child: NavBarItems(title: 'Documentation')),
+            Expanded(child: NavBarItems(title: 'Pricing')),
+            Expanded(child: NavBarItems(title: 'Resources')),
+            Expanded(child: NavBarItems(title: 'Blog')),
+            Expanded(child: NavBarCTAButton())
+          ]),
         ),
         Container(
           color: Colors.black,

@@ -28,16 +28,16 @@ class Header extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return LayoutBuilder(builder: (context, constraints) {
       if (width > 671 && width < 1000) {
-        return Text('The platform for local-first software.',
+        return SelectableText('The platform for local-first software.',
             style: _contentfonts);
       } else if (width < 671) {
-        return Text('The platform for local-first software.',
+        return SelectableText('The platform for local-first software.',
             style: _contentfontsMobile);
       } else if (width < 290) {
-        return Text('The platform for local-first software.',
+        return SelectableText('The platform for local-first software.',
             style: _contentfontsMobile2);
       } else {
-        return Text('The platform for local-first software.',
+        return SelectableText('The platform for local-first software.',
             style: _contentfonts);
       }
     });

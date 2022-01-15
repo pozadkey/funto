@@ -18,8 +18,16 @@ class _HomeState extends State<Home> {
     return Scaffold(
         body: Column(
       children: [
-        NavBar(),
-        Expanded(child: SingleChildScrollView(child: HomeDetails())),
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                NavBar(),
+                HomeDetails(),
+              ],
+            ),
+          ),
+        ),
       ],
     ));
   }

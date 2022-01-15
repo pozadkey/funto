@@ -4,5 +4,5 @@ A simple webpage built with Flutter.
 
 ## Preview
 
-- [Live-Demo]-(http://funto.netlify.app)
+- [Live-Demo](http://funto.netlify.app)
 

@@ -20,7 +20,7 @@ class NavBarLogo extends StatelessWidget {
         Text(
           'Funto',
           style: _headerfonts,
-        )
+        ),
       ],
     );
   }

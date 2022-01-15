@@ -59,12 +59,13 @@ class HomeMobile extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
+          Container(
+            width: 400,
             padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
             child: InputField(),
           ),
           Container(
-              width: 600,
+              width: 400,
               padding: EdgeInsets.fromLTRB(0, 10, 0, 20),
               child: CallToAction()),
           Padding(

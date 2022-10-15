@@ -10,9 +10,8 @@ Landing page for a software development company. This project was an experiment 
 
 - Clone this repo via the link below:
 
-```
-[https://github.com/pozadkey/funto](https://github.com/pozadkey/funto/)
-```
+> [https://github.com/pozadkey/funto](https://github.com/pozadkey/funto/)
+
 
 - Open the project's root folder and excute the following command to get the dependencies
 

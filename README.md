@@ -23,7 +23,7 @@ flutter pub get
 - Enable web support and run the project in Chrome
 
 ```
-flutter config --enable -web
+flutter config --enable-web
 
 flutter run -d chrome
 ```
